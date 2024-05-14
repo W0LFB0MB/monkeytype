@@ -100,4 +100,11 @@ declare namespace MonkeyTypes {
     frontendForcedConfig?: Record<string, string[] | boolean[]>;
     frontendFunctions?: string[];
   };
+
+  type Achievements = {
+    uid: string;
+    achievements: {
+      [achievementId: string]: number;
+    };
+  };
 }

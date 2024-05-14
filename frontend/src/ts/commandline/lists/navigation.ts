@@ -38,7 +38,15 @@ const commands: MonkeyTypes.Command[] = [
       navigate("/settings");
     },
   },
-
+  {
+    id: "viewAchievements",
+    display: "View Achievements Page",
+    alias: "navigate go to",
+    icon: "fa-award",
+    exec: (): void => {
+      navigate("/achievements");
+    },
+  },
   {
     id: "viewAccount",
     display: "View Account Page",

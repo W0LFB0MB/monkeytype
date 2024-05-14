@@ -181,6 +181,7 @@ declare namespace SharedTypes {
     language: string;
     numbers: boolean;
     punctuation: boolean;
+    challenge?: string;
   }
 
   type DBResult<T extends SharedTypes.Config.Mode> = Omit<
@@ -230,7 +231,6 @@ declare namespace SharedTypes {
     keyDuration: number[] | "toolong";
     customText?: CustomTextDataWithTextLen;
     wpmConsistency: number;
-    challenge?: string | null;
     keyOverlap: number;
     lastKeyToEnd: number;
     startToFirstKey: number;

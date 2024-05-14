@@ -124,6 +124,12 @@ const routes: Route[] = [
       });
     },
   },
+  {
+    path: "/achievements",
+    load: (): void => {
+      void PageController.change("achievements");
+    },
+  },
 ];
 
 export function navigate(

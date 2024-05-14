@@ -8,7 +8,8 @@ declare namespace MonkeyTypes {
     | "login"
     | "profile"
     | "profileSearch"
-    | "404";
+    | "404"
+    | "achievements";
 
   type LanguageGroup = {
     name: string;
